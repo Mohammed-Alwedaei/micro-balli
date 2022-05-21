@@ -7,12 +7,12 @@ function compileTask() {
   return src("./src/scss/micro-balli.scss", { sourcemaps: true })
     .pipe(sass({ outputStyle: "compressed" }))
     .pipe(rename("micro-balli.min.css"))
-    .pipe(dest("./build/css"));
+    .pipe(dest("./dist/css"));
 }
 
 // Watch Task
 function watchTask() {
-  watch(["scss/**/*.scss"], series(compileTask));
+  watch(["./src/scss/**/*.scss"], series(compileTask));
 }
 
 // Default Gulp task

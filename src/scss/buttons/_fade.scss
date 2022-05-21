@@ -1,0 +1,29 @@
+.btn-icon-animation {
+  &:hover .btn-icon__icon-reveal {
+    opacity: 1;
+  }
+
+  &:hover .btn-icon__icon-hide {
+    opacity: 0;
+  }
+
+  &:hover .btn-icon__icon-hide {
+  }
+}
+
+.btn-icon__icon,
+.btn-icon__icon-hide {
+  position: relative;
+}
+
+.btn-icon__icon-reveal {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn-icon-animation__scale-out {
+  .btn-icon__icon-reveal {
+    opacity: 0;
+  }
+}
