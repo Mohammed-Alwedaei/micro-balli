@@ -1,8 +1,9 @@
-
 /* Custom Styles to be added here */
 
+@import "./theme/config";
+@import "./utilities/index";
 @import "./buttons/index";
+@import "./transforms/index";
 
 /* Custom Styles to be added here */
-
 @import "../../node_modules/bootstrap/scss/bootstrap";

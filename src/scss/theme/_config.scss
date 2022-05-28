@@ -1,0 +1,15 @@
+$displacement-amount: 0.5rem;
+
+$scale-amount: 1.06;
+
+$top: translate(0, -$displacement-amount);
+$right: translate($displacement-amount, 0);
+$bottom: translate(0, $displacement-amount);
+$left: translate(-$displacement-amount, 0);
+
+$directions: (
+  "top": $top,
+  "right": $right,
+  "bottom": $bottom,
+  "left": $left,
+);

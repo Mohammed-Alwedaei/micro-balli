@@ -1,0 +1,44 @@
+/**
+* * Will handle all core animation styles of button animations
+* TODO: 
+* * Created at: 21/05/2022
+* ! 
+*/
+
+.btn-icon-animation {
+  &:hover .btn-icon__icon-reveal {
+    transform: scale(1);
+  }
+
+  &:hover .btn-icon__icon-hide {
+    transform: scale(0);
+  }
+}
+
+.btn-icon-animation__scale-in {
+  .btn-icon__icon-reveal {
+    transform: scale(0);
+  }
+}
+
+/* Scale */
+
+.btn-icon-animation {
+  &:hover .btn-icon__icon-reveal {
+    transform: translateY(0);
+  }
+
+  &:hover .btn-icon__icon-hide {
+    transform: translateY(115%);
+  }
+}
+
+.btn-icon-animation__slide-down {
+  .btn-icon__icon-reveal {
+    transform: translateY(-115%);
+  }
+}
+
+.ease {
+  transition: all 0.2s ease-in;
+}

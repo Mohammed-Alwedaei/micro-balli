@@ -1,4 +1,5 @@
 .btn-icon-animation {
+  overflow: hidden;
   &:hover .btn-icon__icon-reveal {
     opacity: 1;
   }
@@ -14,6 +15,7 @@
 .btn-icon__icon,
 .btn-icon__icon-hide {
   position: relative;
+  display: inline-block;
 }
 
 .btn-icon__icon-reveal {

@@ -1,0 +1,15 @@
+.animate-transform {
+  @each $direction, $displacement in $directions {
+    &__slide-#{$direction} {
+      &:hover {
+        transform: $displacement;
+      }
+    }
+  }
+
+  &__scale {
+    &:hover {
+      transform: scale($scale-amount);
+    }
+  }
+}
